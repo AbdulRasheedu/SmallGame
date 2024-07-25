@@ -1,0 +1,12 @@
+#heading{
+    text-align: center;
+}
+#btn{
+    text-align: center;
+    border: 1px solid powderblue;
+}
+.button{
+    margin: 10px;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
