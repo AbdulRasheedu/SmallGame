@@ -11,10 +11,17 @@
 <body>
     <h1 id="heading">JS Basic Game</h1>
     <div id="btn">
-        <button onclick="playGame('Bat')">Choose Bat</button>
-        <button onclick="playGame('Ball')">Choose Ball</button>
-        <button onclick="playGame('Stump')">Choose Stump</button>
-        <button onclick="resetScore()">Reset Score</button>
+        <!-- <button onclick="playGame('Bat')">Choose Bat</button> -->
+        <img src="./img/images.png" id="img" onclick="playGame('Bat')">
+
+        <!-- <button onclick="playGame('Ball')">Choose Ball</button> -->
+        <img src="./img/cricket-ball-sport-cartoon-illustration-vector.jpg" id="img" onclick="playGame('Ball')">
+       
+        <!-- <button onclick="playGame('Stump')">Choose Stump</button> -->
+         <img src="./img/download.jpg" id="img" onclick="playGame('Stump')">
+        
+         <!-- <button onclick="resetScore()">Reset Score</button> -->
+          <img src="./img/istockphoto-1279006233-640x640.jpg" id="img-reset" onclick="resetScore()">
         <div id="Display"></div>
         <div id="ScoreDisplay"></div>
     </div>
