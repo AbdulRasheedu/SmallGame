@@ -4,6 +4,13 @@ let score = {
   tie: 0
 };
 
+// Initialize the score from localStorage if it exists
+let storedScore = localStorage.getItem('score');
+if (storedScore) {
+    score = JSON.parse(storedScore);
+}
+
+
 function randomNumber() {
   let random_Number = Math.floor(Math.random() * 3); // Generates a number between 0 and 2
   if (random_Number === 0) {
@@ -95,5 +102,7 @@ function resetScore() {
 
   // Update the display
   displayScore();
+  let display = document.getElementById("Display");
+  display.innerHTML = "";
 }
 
