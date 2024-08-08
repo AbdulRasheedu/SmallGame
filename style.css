@@ -3,10 +3,10 @@
 }
 #btn{
     text-align: center;
-    border: 1px solid powderblue;
+    /* border: 1px solid powderblue; */
 }
-.button{
-    margin: 10px;
+button{
+    margin: 5px;
     padding: 10px 30px;
     border-radius: 20px;
 }

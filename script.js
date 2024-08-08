@@ -81,3 +81,19 @@ function displayScore() {
   let scoreDisplay = document.getElementById("ScoreDisplay");
   scoreDisplay.innerHTML = `Wins: ${score.win}, Losses: ${score.lost}, Ties: ${score.tie}`;
 }
+
+function resetScore() {
+  // Reset the score object
+  score = {
+      win: 0,
+      lost: 0,
+      tie: 0
+  };
+
+  // Clear the localStorage
+  localStorage.removeItem('score');
+
+  // Update the display
+  displayScore();
+}
+
